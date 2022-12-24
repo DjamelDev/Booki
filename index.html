@@ -1,14 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1dc4c37018.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Booki</title>
 </head>
 <body>
 
-    <h1>Hello, world!</h1>
+    <!-- NAVBAR -->
+
+    <header>
+        <nav>
+            <img src="images/logo/Booki.png" id="logo" alt="logo Booki">
+                <a href="#">Hébergements</a>
+                <a href="#">Activités</a>
+        </nav>
+    </header>
+
+    <!-- HEADINGS -->
+
+    <main class="wrapper">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+
+        <!-- SEARCH -->
+        <div class="search-form">
+            <span class="searchFormIcon">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+            </span>
+            <input type="text" placeholder="Marseille, France">
+            <button>
+                <span class="search-text">Rechercher</span>
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <!-- FILTERS -->
+
+        <div class="filter-list">
+            <h2>Filtres</h2>
+            <div class="filter">
+                <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
+                <span>Économique</span>
+            </div>
+            <div class="filter">
+                <i class="fas fa-child" aria-hidden="true"></i>
+                <span>Familial</span>
+            </div>
+            <div class="filter">
+                <i class="fas fa-heart" aria-hidden="true"></i>
+                <span>Romantique</span>
+            </div>
+            <div class="filter">
+                <i class="fas fa-dog" aria-hidden="true"></i>
+                <span>Animaux autorisés</span>
+            </div>
+            </div>
+    
+            <div class="logement">
+                <div class="searchResultWrapicon">
+                    <i class="fas fa-info" aria-hidden="true"></i>
+                </div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+
+            <!-- CARD HEBERGEMENT -->
+
+            <section class="appartments-list">
+                <div class="city">
+                    <h2>Hébergement à Marseille</h2>
+                </div>
+            </section>
+    </main>
+
+
     
 </body>
 </html>
