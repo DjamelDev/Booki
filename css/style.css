@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --blue: #0065FC;
+    --light-blue: #DEEBFF;
+    --dark-grey: #D9D9D9;
+    --grey: #F4F3F3;
+    --light-grey: #F2F2F2;
+    --dark: #000000;
+    --white: #FFFFFF;
+    
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav #logo {
+    width: 3.818rem;
+    height: 1.188rem;
+    margin: 2.75rem auto 3.313rem 3.438rem;
+}
+
+nav a {
+    padding: 2.6rem;
+    border-top: 2px solid transparent;
+}
+
+nav a:last-child{
+    margin-right: 1rem;
+}
+
+nav a:hover {
+    border-top: 2px solid var(--blue);
+    color: var(--blue);
+}
+
+/* MAIN EN-TETE */
+
+.wrapper {
+    margin-left: 3.438rem;
+    margin-top: 1rem;
+}
+
+.wrapper h1 {
+    font-size: 1.375rem;
+}
+
+.wrapper p {
+    margin-top: 0.5rem;
+}
+
+.search-form {
+    display: flex;
+    max-width: 100%;
+    margin-top: 1.25rem;
+}
+
+span.searchFormIcon {
+    background-color: var(--grey);
+    padding: 1rem 1.25rem;
+    text-align: center;
+    border-radius: 0.938rem 0 0 .938rem;
+}
+
+.search-form input[type="text"] { 
+   border: 1px solid var(--light-grey);
+   font-weight: 700;
+   padding-left: 1rem;
+   font-size: 18px;
+   border-right: none;
+   border-left: none;
+}
+
+.search-form input::placeholder {
+    color: var(--dark);
+}
+
+.search-form button {
+    background-color: var(--blue);
+    color: var(--white);
+    width: 8.25rem;
+    border: 1px solid #0065FC;
+    border-radius: 0 1rem 1rem 0;
+    font-weight: 700;
+    font-size: 1.125rem;
+    opacity: 0.9;
+    transition: transform 210ms;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.search-form button .fas.fa-search {
+    display: none;
+}
+
+/* FILTER */
+
+.filter-list {
+    margin-top: 2.875rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.188rem;
+}
+
+.filter-list h2 {
+    font-size: 1.125rem;
+    margin-right: 2rem;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--dark-grey);
+    padding: 0.25rem 1.25rem;
+    border-radius: 1.563rem;
+    cursor: pointer;
+}
+
+.filter i {
+    color: var(--blue);
+}
+
+.filter span {
+    margin: 0.625rem 0 0.625rem 0.625rem;
+    font-size: 1.063rem;
+    font-weight: 700;
+}
+
+/* LOGEMENT */
+
+.logement {
+    display: flex;
+    align-items: center;
+}
+
+.logement i {
+    border: 1px solid var(--dark-grey);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    text-align: center; 
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logement p {
+    margin-left: 0.688rem;  
+}
+
+/* APPARTMENT LIST */
+
+/* .apartments-list {
+    
+} */
+
