@@ -11,6 +11,11 @@
     
 }
 
+html {
+    max-width: 1400px;
+    min-width: 992px;
+}
+
 * {
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
@@ -38,12 +43,16 @@ nav #logo {
 }
 
 nav a {
-    padding: 2.6rem;
     border-top: 2px solid transparent;
+    padding: 3rem 1.5rem;
 }
 
-nav a:last-child{
-    margin-right: 1rem;
+nav > a {
+    margin-right: 4.188rem;
+}
+
+nav a:last-child {
+    margin-right: 0;
 }
 
 nav a:hover {
@@ -130,13 +139,17 @@ span.searchFormIcon {
     margin-right: 2rem;
 }
 
-.filter {
+.filter-list .filter {
     display: flex;
     align-items: center;
     border: 2px solid var(--dark-grey);
     padding: 0.25rem 1.25rem;
     border-radius: 1.563rem;
     cursor: pointer;
+}
+
+.filter-list .filter:hover {
+    background-color: var(--light-blue)
 }
 
 .filter i {
@@ -154,6 +167,7 @@ span.searchFormIcon {
 .logement {
     display: flex;
     align-items: center;
+    margin-bottom: 2.438rem;
 }
 
 .logement i {
@@ -172,5 +186,158 @@ span.searchFormIcon {
     margin-left: 0.688rem;  
 }
 
-/* APPARTMENT LIST */
+/* APARTMENTS LIST */
 
+.apartments-list {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.apartments-list .city {
+    flex-basis: 66%;
+    background-color: var(--light-grey);
+    padding: 1rem 2.5rem 1rem 1rem;
+    border-radius: 1rem;
+    gap: 1.938rem;
+    margin-left: 1.3rem;
+    height: 626px;
+    width: 880px;
+}
+
+
+.apartments-list .popular {
+    flex-basis: 33%;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--light-grey);
+    width: 420px;
+    height: 625px;
+}
+
+/* LIST APPARTEMENTS CITY */
+
+.city-apartments-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.apartments-list h2 {
+    padding: 1rem;
+    font-size: 1.375rem;
+}
+
+.city-apartments-list .apartments-card {
+    background-color: var(--white);
+    border: 1px solid none;
+    border-radius: 1rem;
+    flex-basis: calc(33%-1rem);
+    min-width: 16rem;
+    cursor: pointer;
+    padding: 0.345rem;
+}
+
+.apartments-card img {
+    width: 100%;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.describe-apartments h3 {
+    font-size: 1rem;
+    margin: 0.25rem 1.625rem 0.563rem 1rem;
+}
+
+.describe-apartments .night {
+    margin: 0.563rem 1.625rem 0.563rem 1rem;
+    font-size: 0.875rem;
+}
+
+.describe-apartments .stars {
+    margin: 0.563rem 0rem 0.688rem 1rem;
+}
+
+.stars .blue {
+    color: var(--blue);
+}
+
+.stars .grey {
+    color: var(--light-grey);
+}
+
+.city a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+/* POPULAR */
+
+.top-popular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apartments-list .popular-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2.063rem;
+    flex-wrap: wrap;
+}
+
+.top-popular h2 {
+    font-size: 1.375rem;
+    margin-bottom: 1.625rem;;
+}
+
+.top-popular .fas.fa-chart-line {
+    font-size: 1.3rem;
+    color: var(--blue);
+    margin-bottom: 1.625rem;
+}
+
+
+.popular-card {
+    display: flex;
+    background-color: white;
+    padding: 0.4em;
+    border-radius: 1em;
+    margin-left: 1.5rem;
+    margin-right: 3rem;
+}
+
+.popular-card:last-child {
+    margin-bottom: 3rem;
+}
+
+.popular-card:last-child h3 {
+    margin-bottom: -1.2rem;
+}
+
+.popular-card img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.describe-popular h3 {
+    font-size: 1rem;
+    margin: 0.375rem 1.375rem 0.438rem 0.938rem;
+    width: 10.563rem;
+    height: 2.375rem;
+}
+
+.describe-popular .price {
+    font-size: 0.875rem;
+    margin: 0.438rem 1.375rem 2.75rem 0.938rem;
+}
+
+.describe-popular .stars {
+    margin: 2.75rem 0 0.20rem 0.938rem;
+}
