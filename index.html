@@ -10,23 +10,25 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
+    <div class="all-content">
 
+    <!-- NAVBAR HAUT DE PAGE-->
     <header>
+        <a href="index.html"><img src="images/logo/Booki.png" id="logo" alt="logo Booki"></a>
         <nav>
-            <img src="images/logo/Booki.png" id="logo" alt="logo Booki">
                 <a href="#hebergements">Hébergements</a>
                 <a href="#activity">Activités</a>
         </nav>
     </header>
 
-    <!-- HEADINGS -->
+    <!-- INTRODUCTION DU CONTENU -->
 
     <main class="wrapper">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
 
-        <!-- SEARCH -->
+        <!-- SEARCH BAR -->
+
         <form action="get" class="search-form">
             <span class="searchFormIcon">
                 <i class="fa-sharp fa-solid fa-location-dot"></i>
@@ -69,7 +71,7 @@
 
             <!-- CARD HEBERGEMENT -->
 
-        <section class="apartments-list">
+        <section class="apartments-list tablette">
             
             <div class="city">
                 <h2 id="hebergements">Hébergements à Marseille</h2>
@@ -98,7 +100,7 @@
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
                             </p>
                         </div>
                     </a>
@@ -125,7 +127,7 @@
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star grey"></i>
+                                <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star grey"></i>
                             </p>
                         </div>
@@ -154,7 +156,7 @@
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
                             </p>
                         </div>
                     </a>
@@ -162,7 +164,7 @@
             <a href="#" class="more">Afficher plus</a>
             </div>
 
-            <!-- LES PLUS POPULAIRES -->
+            <!-- MOST POPULAR -->
 
             <div class="popular">
                 <div class="top-popular">
@@ -175,12 +177,13 @@
                         <div class="describe-popular">
                             <h3>Hôtel Le soleil du matin</h3>
                             <p class="price">Nuit à partir de <strong>128€</strong></p>
+                            <div class="hostingPopularResponsiveContentWhitespace"></div>
                             <p class="stars">
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
                             </p>
                         </div>
                     </a>
@@ -194,7 +197,7 @@
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
                             </p>
                         </div>
                     </a>
@@ -203,13 +206,13 @@
                         <div class="describe-popular">
                             <h3>Hôtel Bleu et Blanc</h3>
                             <p class="price">Nuit à partir de <strong>68€</strong></p>
-                        <div class="hostingPopularWrapcontentContentWhitespace"></div>
+                        <div class="hostingPopularWrapContentWhitespace"></div>
                             <p class="stars">
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
                                 <i class="fas fa-star blue"></i>
-                                <i class="fas fa-star blue"></i>
+                                <i class="fas fa-star grey"></i>
                             </p>
                         </div>
                     </a>
@@ -218,67 +221,54 @@
         </section>
 
         <!-- ACTIVITÉS À MARSEILLE -->
-        <div class="activity-marseille">
-            <h3 id="activity">Activités à Marseille</h3>
-            <div class="card-activity">
+        <section id="activity">
+            <div class="conteneur-activity">
+                <h3 class="titre-activity">Activités à Marseille</h3>
 
-                <!-- CARD #1 -->
-                <div class="cadre-rectangle">
-                    <a href="#">
-                        <div class="card-img">
-                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">  
-                        </div>    
-                        <div class="card-describe">
+                <!-- ACTIVITY CARD #1 -->
+                <div class="resultats-activity">
+                    <div class="card-activity">
+                        <a href="#">
+                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">    
                             <h3>Vieux-Port</h3>
-                        </div>
+                        </a> 
+                    </div>
+
+                <!-- ACTIVITY CARD #2 -->
+                <div class="card-activity">
+                    <a href="#">
+                        <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="vieux port">    
+                        <h3>Fort de Pomègues</h3>
                     </a> 
                 </div>
 
-                <!-- CARD #2 -->
-                <div class="cadre-rectangle">
+                <!-- ACTIVITY CARD #3 -->
+                <div class="card-activity">
                     <a href="#">
-                        <div class="card-img">
-                            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">  
-                        </div>    
-                        <div class="card-describe">
-                            <h3>Fort de Pomègues</h3>
-                        </div>
+                        <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="vieux port">    
+                        <h3>Parc national des Calanques</h3>
                     </a> 
                 </div>
 
-                <!-- CARD #3 -->
-                <div class="cadre-rectangle">
+                <!-- ACTIVITY #CARD #4 -->
+                <div class="card-activity last">
                     <a href="#">
-                        <div class="card-img">
-                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">  
-                        </div>    
-                        <div class="card-describe">
-                            <h3>Parc national des Calanques</h3>
-                        </div>
-                    </a> 
-                </div>
-
-                <!-- #CARD #4 -->
-                <div class="cadre-rectangle">
-                    <a href="#">
-                        <div class="card-img">
-                            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">  
-                        </div>    
-                        <div class="card-describe">
-                            <h3>Notre-Dame-de-la-Garde</h3>
-                        </div>
+                        <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="vieux port">    
+                        <h3>Notre-Dame-de-la-Garde</h3>
                     </a> 
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
-        <!-- FOOTER -->
+        <!-- PIED DE PAGE -->
     
         <footer>
             <section class="section-footer">
+
                 <!-- BLOC START -->
-                <div class="bloc-footer">
+
+                <div class="bloc-footer start">
                     <h3>À propos</h3>
                     <ul>
                         <li><a href="#">Fonctionnement du site</a></li>
@@ -286,24 +276,30 @@
                         <li><a href="#">Données et confidentialité</a></li>
                     </ul>
                 </div>
+
                 <!-- BLOC MIDDLE -->
-                <div class="bloc-footer">
+
+                <div class="bloc-footer middle">
                     <h3>Nos hébergements</h3>
                     <ul>
                         <li><a href="#">Charte qualité</a></li>
                         <li><a href="#">Proposer votre hôtel</a></li>
                     </ul>
                 </div>
+
                 <!-- BLOC END -->
-                <div class="bloc-footer">
+
+                <div class="bloc-footer end">
                     <h3>Assistance</h3>
                     <ul>
                         <li><a href="#">Centre d’aide</a></li>
                         <li><a href="#">Nous contacter</a></li>
                     </ul>
                 </div>
+
             </section>
         </footer>
+    </div>
 </body>
 </html>
     
