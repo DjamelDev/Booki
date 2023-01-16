@@ -169,6 +169,7 @@ span.searchFormIcon {
 .filter i {
     color: var(--blue);
     font-size: 1.375rem;
+    margin-right: 0.2rem;
 }
 
 .filter span {
@@ -282,12 +283,13 @@ span.searchFormIcon {
 }
 
 .describe-apartments h3 {
-    font-size: 1.1vw;
+    font-size: .9rem;
+    margin: 5px 0 5px 0;
 }
 
 .describe-apartments p {
-    font-size: 1.1vw;
-    margin-bottom: 4%;
+    font-size: 0.813rem;
+    margin-bottom: 8px;
 }
 
 .apartments-card .stars {
@@ -317,7 +319,7 @@ span.searchFormIcon {
 }
 
 .top-popular h2 {
-    font-size: 20px;
+    font-size: 1.23rem;
 }
 
 .top-popular i {
@@ -357,7 +359,7 @@ span.searchFormIcon {
 .popular-card img {
     border: 5px solid var(--white);
     border-radius: 1.25rem 0 0 1.25rem;
-    width: 37%;
+    width: 40%;
     object-fit: cover;
 }
 
@@ -445,7 +447,7 @@ footer {
     background-color: var(--light-grey);    
     margin-left: 48px;
     margin-right: 53px;
-    padding: 30px 70px 50px 70px;
+    padding: 35px 70px 50px 70px;
     display: flex;
     justify-content: space-around;
 }
@@ -455,10 +457,6 @@ footer ul {
     padding: 0;
 }
 
-footer .section-footer {
-    display: flex;
-    width: 100%;
-}
 
 footer h3 {
     margin-bottom: 1.25rem;
@@ -481,12 +479,17 @@ footer a {
     /* FILTERS */
 
     .filter-list {
-            margin-right: 24px;
+        margin-right: 24px;
+        gap: 0.9rem;
+    }
+
+    .filter-list h2 {
+        margin-right: 0;
     }
 
     .filter span {
         margin: 0.625rem 0 0.625rem 0.625rem;
-        font-size: 1.22vw;
+        font-size: 1.28vw;
         font-weight: 700;
     }
 
@@ -551,13 +554,224 @@ footer a {
         margin-left: 0.8rem;
     }
 
+    footer .nos-hebergements {
+        margin: 0 1rem;
+    }
 }
 
 /* RESPONSIVE MOBILE */ 
 
  @media screen and (max-width: 768px) {
 
-    .all-content {
-        border: 6px solid blue;
+    /* HEADER / NAVBAR */
+
+    header {
+        margin: 0;
+        padding: 0;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    nav.menu {
+        margin-bottom: 1.938rem;
+        width: 100%;
+    }
+
+    nav.menu a {
+        margin: 0;
+        justify-content: center;
+        border-top: none;
+        border-bottom: 3px solid var(--light-grey);
+        width: 50%;
+    }
+
+    .menu a:hover {
+        border-top: none;
+        border-bottom: 3px solid var(--blue);
+    }
+
+    /* INTRO */
+
+    .intro h1 {
+        font-size: 22px;
+        margin-right: 20px;
+    }
+
+    .intro p {
+        font-size: .9rem;
+    }
+
+    /* SEARCH BAR */
+
+    .bloc-search {
+        padding-right: 2rem;
+    }
+
+    .search-form input[type="text"] {
+        width: 66%;
+    }
+
+    .search-form button span {
+        display: none;
+    }
+
+    .search-form button {
+        width: 3rem;
+    }
+
+    .search-form button .fas.fa-search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+    }
+
+    /* FILTERS */
+
+    .filter-list h2 {
+        flex-basis: 100%;
+    }
+
+    .filter {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 47%;
+    }
+
+    .filter i {
+        margin-right: 0;
+    }
+
+    .filter span {
+        font-size: 0.688rem;
+    }
+
+    /* HEBERGEMENTS POPULAR */
+
+    .apartments-list {
+        margin: 0;
+        gap: 0;
+    }
+
+    .container-popular {
+        order: 1;
+        width: 100%;
+        margin: 0;
+    }
+
+    .top-popular h2 {
+        font-size: 1.375rem;
+    }
+
+    .result-popular {
+        flex-direction: column;
+    }
+
+    .popular-card img {
+        width: 35%;
+    }
+
+    .popular-card .card-right {
+        width: 100%;
+    }
+
+    .card-right h4 {
+        margin-bottom: 3%;
+    }
+
+    /* CITY CARD */
+
+    .apartments-list .container-city {
+        order: 2;
+        background-color: var(--white);  
+        display: flex; 
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .container-city h2 {
+        padding: 2rem 0 0rem 1rem;
+        margin-bottom: 0;
+    }
+
+    .container-city .more {
+        display: none;
+    }
+
+    .result-hebergements-l1,
+    .result-hebergements-l2 {
+        flex-direction: column;
+        max-height: 100%;
+        gap: 0;
+        margin: 0;
+    }
+
+    .apartments-card {
+        width: 100%;
+    }
+
+    .apartments-card:hover {
+        transform: none;
+        transition: none;
+    }
+
+    .apartments-card img {
+        height: 120px;
+        object-fit: cover;
+    }
+
+    /* ACTIVITY */
+
+    #activity {
+        padding: 60px 22px 80px 19px;
+    }
+
+    .container-activity h3 {
+        width: 120px;
+        margin-bottom: 0;
+    }
+
+    .result-activity {
+        flex-direction: column;
+    }
+
+    .card-activity {
+        width: 100%;
+        height: 190px;
+    }
+
+    .card-activity:hover {
+        transform: none;
+        transition: none;
+    }
+
+    .card-activity img {
+        height: 134px;
+    }
+
+    .card-activity h3 {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    footer {
+        flex-direction: column;
+        margin: 0;
+        gap: 40px;
+        padding: 45px 30px 61px 30px;
+    }
+
+    footer .nos-hebergements {
+        margin: 0;
     }
  }
