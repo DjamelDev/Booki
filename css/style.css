@@ -79,6 +79,7 @@ nav a:hover {
 
 .intro h1 {
     margin-bottom: 0.5rem;
+    font-size: 1.375rem;
 }
 
 /* SEARCH BAR */
@@ -205,8 +206,8 @@ span.searchFormIcon {
 
 .apartments-list {
     display: flex;
-    justify-content: space-between;
-    gap: 1.25rem;
+    /* justify-content: space-between; */
+    gap: 3rem;
     margin: 0 3.125rem;
 }
 
@@ -228,12 +229,11 @@ span.searchFormIcon {
 /* LIST APPARTEMENTS CITY */
 
 .apartments-list .container-city {
-    padding: 42px 30px 46px 30px;
+    padding: 42px 40px 40px 40px;
     width: 65%;
 }
 
-.container-city h2 {
-    margin: 0rem 0rem 1.438rem 0rem;
+.container-city #hebergements {
     font-size: 1.375rem;
 }
 
@@ -246,10 +246,14 @@ span.searchFormIcon {
 .result-hebergements-l2 {
     display: flex;
     justify-content: space-around;
-    gap: 1.438rem;
+    gap: 1.938rem;
     width: 100%;
     max-height: 220px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+}
+
+.result-hebergements-l2 {
+    margin-bottom: 8%;
 }
 
 .apartments-card {
@@ -276,7 +280,6 @@ span.searchFormIcon {
 .describe-apartments {
     display: flex;
     flex-direction: column;
-    /* margin-top: 1%; */
     margin-left: 2.8%;
     margin-bottom: 0.2%;
     width: max-content;
@@ -306,7 +309,7 @@ span.searchFormIcon {
 /* POPULAR */
 
 .container-popular {
-    padding: 41px 30px 34px 30px;
+    padding: 41px 38px 30px 35px;
     width: 30%;
 }
 
@@ -315,11 +318,11 @@ span.searchFormIcon {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 26px;
 }
 
 .top-popular h2 {
-    font-size: 1.23rem;
+    font-size: 1.375rem;
+    margin-bottom: .5rem;
 }
 
 .top-popular i {
@@ -339,7 +342,7 @@ span.searchFormIcon {
     flex-direction: row;
     background-color: var(--white);
     border-radius: 1.25rem;
-    margin-top: 23px;
+    margin-top: 18px;
     width: 100%;
     height: 150px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -384,7 +387,6 @@ span.searchFormIcon {
     display: flex;
 }
 
-
 /* ACTIVITY MARSEILLE */
 
 #activity {
@@ -393,7 +395,7 @@ span.searchFormIcon {
 
 .titre-activity {
     font-size: 1.375rem;
-    margin-bottom: 2.125rem;
+    margin-bottom: 1.154rem;
 }
 
 .result-activity {
@@ -449,7 +451,6 @@ footer {
     margin-right: 53px;
     padding: 35px 70px 50px 70px;
     display: flex;
-    justify-content: space-around;
 }
 
 footer ul {
@@ -471,6 +472,15 @@ footer a {
     color: var(--dark);
 }
 
+
+
+footer .about {
+    margin-right: 15%;
+}
+
+footer .nos-hebergements {
+    margin-right: 20%;
+}
 
 /* RESPONSIVE TABLETTE */
 
@@ -554,8 +564,18 @@ footer a {
         margin-left: 0.8rem;
     }
 
+    /* FOOTER */
+
+    footer h3 {
+        width: 120%;
+    }
+
+    footer .about {
+        margin-right: 10%;
+    }
+
     footer .nos-hebergements {
-        margin: 0 1rem;
+        margin-right: 10%;
     }
 }
 
@@ -602,7 +622,7 @@ footer a {
 
     .intro h1 {
         font-size: 22px;
-        margin-right: 20px;
+        margin-right: 95px;
     }
 
     .intro p {
