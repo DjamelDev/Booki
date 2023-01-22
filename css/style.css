@@ -820,7 +820,7 @@ footer .nos-hebergements {
     .card-activity {
         height: 190px;
         width: auto;
-        margin: 0px 1.2rem 1.1rem;
+        margin: 0 1.1rem;
     }
 
     .card-activity:hover {
