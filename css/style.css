@@ -630,6 +630,10 @@ footer .nos-hebergements {
 
     /* INTRO */
 
+    .intro {
+        margin-left: 1.25rem;
+    }
+
     .intro h1 {
         font-size: 22px;
         margin-right: 95px;
@@ -645,6 +649,7 @@ footer .nos-hebergements {
 
     .bloc-search {
         padding-right: 2rem;
+        margin-left: 1.25rem;
     }
 
     .search-form input[type="text"] {
@@ -666,7 +671,7 @@ footer .nos-hebergements {
         color: var(--white);
     }
 
-    /* FILTERS */
+    /* FILTERS AND LOGEMENT */
 
 
     .filter-list {
@@ -701,6 +706,10 @@ footer .nos-hebergements {
     .filter span {
         font-size: 0.688rem;
         margin-left: 0.4rem;
+    }
+
+    .logement {
+        margin-left: 1.25rem;
     }
 
     /* HEBERGEMENTS POPULAR */
@@ -810,6 +819,8 @@ footer .nos-hebergements {
 
     .card-activity {
         height: 190px;
+        width: auto;
+        margin: 0px 1.2rem 1.1rem;
     }
 
     .card-activity:hover {
