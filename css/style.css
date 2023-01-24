@@ -8,7 +8,6 @@
     --light-grey: #F2F2F2;
     --dark: #000000;
     --white: #FFFFFF;
-    
 }
 
 html {
@@ -678,7 +677,7 @@ footer .nos-hebergements {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 70px;
+        margin-top: 50px;
         margin-left: 20px;
         margin-right: 20px;
         padding: 0;
@@ -704,7 +703,7 @@ footer .nos-hebergements {
     }
 
     .filter span {
-        font-size: 0.688rem;
+        font-size: 0.9rem;
         margin-left: 0.4rem;
     }
 
@@ -784,16 +783,12 @@ footer .nos-hebergements {
     }
 
     .apartments-card img {
-        height: 160px;
+        height: 150px;
         object-fit: cover;
     }
 
-    .describe-apartments h3 {
-        font-size: 1rem;
-    }
-
     .describe-apartments p {
-        font-size: 0.875rem;
+        font-size: 13px;
     }
     
     .container-city .more {
@@ -844,5 +839,6 @@ footer .nos-hebergements {
         flex-direction: column;
         margin: 5rem 0 0 0;
         gap: 40px;
+        padding-left: 22px;
     }
  }
